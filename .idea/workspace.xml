@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a014abac-4623-40d0-b2e3-cb5edc1e9b1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structure.txt" afterPath="$PROJECT_DIR$/structure.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bbSetup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +57,7 @@
       <file leaf-file-name="structure.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.3207547" vertical-offset="25" max-vertical-offset="468">
+            <state line="25" column="26" selection-start="510" selection-end="510" vertical-scroll-proportion="0.90296495" vertical-offset="115" max-vertical-offset="558">
               <folding />
             </state>
           </provider>
@@ -228,10 +227,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="717" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -386,7 +385,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.3207547" vertical-offset="25" max-vertical-offset="468">
+        <state line="25" column="26" selection-start="510" selection-end="510" vertical-scroll-proportion="0.90296495" vertical-offset="115" max-vertical-offset="558">
           <folding />
         </state>
       </provider>

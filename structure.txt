@@ -19,3 +19,8 @@ Git Commands
  git commit -m "initial commit or any comments"
  git remote add origin https://github.com/srujankk/BB_Setup.git
  git push -u origin master
+
+ To Update changed files to github
+ git add .
+ git commit -m "update with comments"
+ git push -u origin master
