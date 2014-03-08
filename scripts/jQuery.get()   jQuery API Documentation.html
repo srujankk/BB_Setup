@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://api.jquery.com/jQuery.get/ -->
+<html class="js multiplebgs boxshadow cssgradients wf-klavikaweb-i7-active wf-klavikaweb-n7-active wf-sourcecodepro-n4-active wf-sourcecodepro-n7-active wf-active" lang="en-US"><!--<![endif]--><head data-live-domain="api.jquery.com"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./jQuery.get()   jQuery API Documentation_files/ados"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>jQuery.get() | jQuery API Documentation</title>
+
+	<meta name="author" content="jQuery Foundation - jquery.org">
+	<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="https://api.jquery.com/jquery-wp-content/themes/api.jquery.com/i/favicon.ico">
+
+	<link rel="stylesheet" href="https://api.jquery.com/jquery-wp-content/themes/jquery/css/base.css?v=1">
+	<link rel="stylesheet" href="https://api.jquery.com/jquery-wp-content/themes/api.jquery.com/style.css">
+	<link rel="pingback" href="https://api.jquery.com/xmlrpc.php">
+	<!--[if lt IE 7]><link rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+
+	<script type="text/javascript" async="" src="./jQuery.get()   jQuery API Documentation_files/ga.js"></script><script src="./jQuery.get()   jQuery API Documentation_files/modernizr.custom.2.6.2.min.js"></script>
+
+	<script src="./jQuery.get()   jQuery API Documentation_files/jquery.min.js"></script>
+	<script>window.jQuery || document.write(unescape('%3Cscript src="https://api.jquery.com/jquery-wp-content/themes/jquery/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+
+	<script src="./jQuery.get()   jQuery API Documentation_files/plugins.js"></script>
+	<script src="./jQuery.get()   jQuery API Documentation_files/main.js"></script>
+
+	<script src="./jQuery.get()   jQuery API Documentation_files/wde1aof.js"></script>
+	<style type="text/css">.tk-source-code-pro{font-family:"source-code-pro",sans-serif;}.tk-klavika-web{font-family:"klavika-web",sans-serif;}</style><link rel="stylesheet" href="https://use.typekit.net/c/d4d852/klavika-web:i7:n7,source-code-pro:n4:n7.PYh:F:2,PYg:F:2,Y1M:F:2,Y1P:F:2/d?3bb2a6e53c9684ffdc9a98f2135b2a6250f2340d8ca0853b7df9676f5fa610fe069f9d29c9b5e67ae7b6312a16ff95d3a73356eed53502d6630d88cb0fe9789e0ac2d9a6c14ac282069f97be80efceecd4f5e0e58b889e8649ff22efc0c4063e9f9f87c7a8920dcab32add3496e6b09e6a94141aaaeb81a4bb1d4a09b8a14ac46d7d0dff3bf6532c044b0313c5ed1d7226c76cac5039645b4082ff59a8953c4e06ef9a344cf9265e8de3ed48ac2f34b281583cbaf6f2f580f7709eba9ea284dc14f4722ed0e264d7faa135466fbba043f093297f0efc92bfcb7b3eb8761407436be31d8029117f1a72aa7b8b6319c956c739e1c25b7a993a45"><script>try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript" src="./jQuery.get()   jQuery API Documentation_files/comment-reply.min.js"></script>
+<meta name="generator" content="WordPress 3.8">
+
+</head>
+<body class="api jquery single single-post postid-325 single-format-standard single-author singular">
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<header>
+	<section id="global-nav">
+		<nav>
+			<div class="constrain">
+				<ul class="projects">
+					<li class="project jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="http://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="http://qunitjs.com/" title="QUnit">QUnit</a></li>
+				</ul>
+				<ul class="links l_tinynav1">
+					<li><a href="http://plugins.jquery.com/">Plugins</a></li>
+					<li class="dropdown"><a href="http://contribute.jquery.org/">Contribute</a>
+						<ul>
+							<li><a href="http://contribute.jquery.org/cla/">CLA</a></li>
+							<li><a href="http://contribute.jquery.org/style-guide/">Style Guides</a></li>
+							<li><a href="http://contribute.jquery.org/triage/">Bug Triage</a></li>
+							<li><a href="http://contribute.jquery.org/code/">Code</a></li>
+							<li><a href="http://contribute.jquery.org/documentation/">Documentation</a></li>
+							<li><a href="http://contribute.jquery.org/web-sites/">Web Sites</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
+						<ul class="wide">
+							<li><a href="http://events.jquery.org/2014/san-diego/">Feb 12-13 | jQuery San Diego</a></li>
+							<li><a href="http://www.gentics.com/jquery-europe">Feb 28-Mar 1 | jQuery Europe</a></li>
+							<li><a href="http://jqueryto.com/">March 15-16 | jQuery Toronto</a></li>
+							<li><a href="http://jqueryuk.com/">May 16 | jQuery UK</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
+						<ul>
+							<li><a href="http://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="http://try.jquery.com/">Try jQuery</a></li>
+							<li><a href="http://irc.jquery.org/">IRC/Chat</a></li>
+							<li><a href="http://forum.jquery.com/">Forums</a></li>
+							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://jquery.org/">jQuery Foundation</a>
+						<ul>
+							<li><a href="https://jquery.org/join/">Join</a></li>
+							<li><a href="https://jquery.org/members/">Members</a></li>
+							<li><a href="https://jquery.org/team/">Team</a></li>
+							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
+							<li><a href="https://jquery.org/donate/">Donate</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+<div id="container">
+	<div id="logo-events" class="constrain clearfix">
+		<h2 class="logo"><a href="http://jquery.com/" title="jQuery API Documentation">jQuery API Documentation</a></h2>
+
+		<aside><div id="broadcast"><a href="https://engine.adzerk.net/r?e=eyJhdiI6MjIyMzYsImF0IjoxMzE0LCJjbSI6OTUyMjMsImNoIjo4MzY4LCJjciI6MjY2NTA5LCJkaSI6IjhmNzRjMTAwNjVmMzQ2YjRiMDVkODgxMDA2NjE1ZDNhIiwiZG0iOjEsImZjIjozMjk0OTEsImZsIjoxNzEwMzUsImt3IjoidW5kZWZpbmVkIiwibnciOjU0NDksInBjIjowLCJwciI6MjE5MzcsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwic3QiOjUzODI5LCJ0cyI6MTM5Mzk4NzA5ODc5MiwidXIiOiJodHRwOi8vZXZlbnRzLmpxdWVyeS5vcmcvMjAxNC9jaGljYWdvIn0&s=QRQQP6_HCJWxRRTJqWDIyPOyaN4" rel="nofollow" target="_blank" title="jQuery Conference Chicago 2014"><img src="./jQuery.get()   jQuery API Documentation_files/899316a59b9c4404b7764466b222bf6b.png" title="jQuery Conference Chicago 2014" alt="jQuery Conference Chicago 2014" border="0" width="400" height="100"></a><img height="0px" width="0px" border="0" src="./jQuery.get()   jQuery API Documentation_files/i.gif"></div></aside>
+	</div>
+
+	<nav id="main" class="constrain clearfix">
+		<div class="menu-top-container">
+	<ul id="menu-top" class="menu l_tinynav2">
+<li class="menu-item"><a href="http://jquery.com/download/">Download</a></li>
+<li class="menu-item"><a href="http://api.jquery.com/">API Documentation</a></li>
+<li class="menu-item"><a href="http://blog.jquery.com/">Blog</a></li>
+<li class="menu-item"><a href="http://plugins.jquery.com/">Plugins</a></li>
+<li class="menu-item"><a href="http://jquery.com/browser-support/">Browser Support</a></li>
+	</ul><select id="tinynav2" class="tinynav tinynav2"><option>Navigate...</option><option value="http://jquery.com/download/">Download</option><option value="http://api.jquery.com/">API Documentation</option><option value="http://blog.jquery.com/">Blog</option><option value="http://plugins.jquery.com/">Plugins</option><option value="http://jquery.com/browser-support/">Browser Support</option></select>
+</div>
+
+		<form method="get" class="searchform" action="https://api.jquery.com/">
+	<button type="submit" class="icon-search"><span class="visuallyhidden">search</span></button>
+	<label>
+		<span class="visuallyhidden">Search jQuery API Documentation</span>
+		<input type="text" name="s" value="" placeholder="Search">
+	</label>
+</form>
+	</nav>
+
+	<div id="content-wrapper" class="clearfix row">
+
+<div class="content-right twelve columns">
+	<div id="content">
+					
+<article id="post-325" class="post-325 post type-post status-publish format-standard hentry category-shorthand-methods category-10 category-15">
+	<header class="entry-header">
+		<h1 class="entry-title">jQuery.get()</h1>
+		<hr>
+				<div class="entry-meta">
+			Categories: <span class="category"><a href="https://api.jquery.com/category/ajax/" title="View all posts in Ajax">Ajax</a> &gt; <a href="https://api.jquery.com/category/ajax/shorthand-methods/" title="View all posts in Shorthand Methods">Shorthand Methods</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="jQuery-get1" class="entry method"><h2 class="section-title">
+<span class="name">jQuery.get( url [, data ] [, success(data, textStatus, jqXHR) ] [, dataType ] )</span><span class="returns">Returns: <a href="http://api.jquery.com/Types/#jqXHR">jqXHR</a></span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>Load data from the server using a HTTP GET request.</p>
+<ul class="signatures"><li class="signature">
+<h4 class="name">
+<span class="version-details">version added: <a href="https://api.jquery.com/category/version/1.0/">1.0</a></span><a id="jQuery-get-url-data-successdata--textStatus--jqXHR-dataType" href="https://api.jquery.com/jQuery.get/#jQuery-get-url-data-successdata--textStatus--jqXHR-dataType"><span class="icon-link"></span>jQuery.get( url [, data ] [, success(data, textStatus, jqXHR) ] [, dataType ] )</a>
+</h4>
+<ul>
+<li>
+<div><strong>url</strong></div>
+<div>Type: <a href="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>A string containing the URL to which the request is sent.</div>
+</li>
+<li>
+<div><strong>data</strong></div>
+<div>Type: <a href="http://api.jquery.com/Types/#PlainObject">PlainObject</a> or <a href="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>A plain object or string that is sent to the server with the request.</div>
+</li>
+<li>
+<div><strong>success(data, textStatus, jqXHR)</strong></div>
+<div>Type: <a href="http://api.jquery.com/Types/#Function">Function</a>()</div>
+<div>A callback function that is executed if the request succeeds.</div>
+</li>
+<li>
+<div><strong>dataType</strong></div>
+<div>Type: <a href="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>The type of data expected from the server. Default: Intelligent Guess (xml, json, script, or html).</div>
+</li>
+</ul>
+</li></ul>
+<div class="longdesc" id="entry-longdesc">
+    <p>This is a shorthand Ajax function, which is equivalent to:</p>
+    <div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+						<div class="line n6">6</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.ajax({</code></div></div><div class="container"><div class="line"><code>  url: url,</code></div></div><div class="container"><div class="line"><code>  data: data,</code></div></div><div class="container"><div class="line"><code>  success: success,</code></div></div><div class="container"><div class="line"><code>  dataType: dataType</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <p>The <code>success</code> callback function is passed the returned data, which will be an XML root element, text string, JavaScript file, or JSON object, depending on the MIME type of the response. It is also passed the text status of the response. </p>
+    <p><strong>As of jQuery 1.5</strong>, the <code>success</code> callback function is also passed a <a href="https://api.jquery.com/jQuery.get/#jqxhr-object">"jqXHR" object</a> (in <strong>jQuery 1.4</strong>, it was passed the <code>XMLHttpRequest</code> object). However, since JSONP and cross-domain GET requests do not use <abbr title="XMLHTTPRequest">XHR</abbr>,  in those cases the <code>jqXHR</code> and <code>textStatus</code> parameters passed to the success callback are undefined.</p>
+    <p>Most implementations will specify a success handler:</p>
+    <div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"ajax/test.html"</span>, <span class="keyword">function</span>( data ) {</code></div></div><div class="container"><div class="line"><code>  $( <span class="string">".result"</span> ).html( data );</code></div></div><div class="container"><div class="line"><code>  alert( <span class="string">"Load was performed."</span> );</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <p>This example fetches the requested HTML snippet and inserts it on the page.</p>
+    <h4 id="jqxhr-object">The jqXHR Object</h4>
+    <p><strong>As of jQuery 1.5</strong>, all of jQuery's Ajax methods return  a superset of the <code>XMLHTTPRequest</code> object. This jQuery XHR object, or "jqXHR," returned by <code>$.get()</code> implements the Promise interface, giving it all the properties, methods, and behavior of a Promise (see <a href="https://api.jquery.com/category/deferred-object/">Deferred object</a> for more information). The <code>jqXHR.done()</code> (for success), <code>jqXHR.fail()</code> (for error), and <code>jqXHR.always()</code> (for completion, whether success or error) methods take a function argument that is called when the request terminates. For information about the arguments this function receives, see the <a href="https://api.jquery.com/jQuery.ajax/#jqXHR">jqXHR Object</a> section of the $.ajax() documentation.</p>
+    <p>The Promise interface also allows jQuery's Ajax methods, including <code>$.get()</code>, to chain multiple <code>.done()</code>, <code>.fail()</code>, and <code>.always()</code> callbacks on a single request, and even to assign these callbacks after the request may have completed. If the request is already complete, the callback is fired immediately.</p>
+    <div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+						<div class="line n6">6</div>
+					
+						<div class="line n7">7</div>
+					
+						<div class="line n8">8</div>
+					
+						<div class="line n9">9</div>
+					
+						<div class="line n10">10</div>
+					
+						<div class="line n11">11</div>
+					
+						<div class="line n12">12</div>
+					
+						<div class="line n13">13</div>
+					
+						<div class="line n14">14</div>
+					
+						<div class="line n15">15</div>
+					
+						<div class="line n16">16</div>
+					
+						<div class="line n17">17</div>
+					
+						<div class="line n18">18</div>
+					
+						<div class="line n19">19</div>
+					
+						<div class="line n20">20</div>
+					
+						<div class="line n21">21</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// Assign handlers immediately after making the request,</span></code></div></div><div class="container"><div class="line"><code><span class="comment">// and remember the jqxhr object for this request</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> jqxhr = $.get( <span class="string">"example.php"</span>, <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  alert( <span class="string">"success"</span> );</code></div></div><div class="container"><div class="line"><code>})</code></div></div><div class="container"><div class="line"><code>  .done(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    alert( <span class="string">"second success"</span> );</code></div></div><div class="container"><div class="line"><code>  })</code></div></div><div class="container"><div class="line"><code>  .fail(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    alert( <span class="string">"error"</span> );</code></div></div><div class="container"><div class="line"><code>  })</code></div></div><div class="container"><div class="line"><code>  .always(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    alert( <span class="string">"finished"</span> );</code></div></div><div class="container"><div class="line"><code>  });</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// Perform other work here ...</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// Set another completion function for the request above</span></code></div></div><div class="container"><div class="line"><code>jqxhr.always(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  alert( <span class="string">"second finished"</span> );</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+    <h4>Deprecation Notice</h4>
+    <p>The <code>jqXHR.success()</code>, <code>jqXHR.error()</code>, and <code>jqXHR.complete()</code> callback methods introduced in jQuery 1.5 are <strong>deprecated as of jQuery 1.8</strong>. To prepare your code for their eventual removal, use <code>jqXHR.done()</code>, <code>jqXHR.fail()</code>, and <code>jqXHR.always()</code> instead.</p>
+  </div>
+<h3>Additional Notes:</h3>
+<div class="longdesc"><ul>
+<li>
+			Due to browser security restrictions, most "Ajax" requests are subject to the <a title="Same Origin Policy on Wikipedia" href="http://en.wikipedia.org/wiki/Same_origin_policy">same origin policy</a>; the request can not successfully retrieve data from a different domain, subdomain, port, or protocol.
+		</li>
+<li>
+			If a request with jQuery.get() returns an error code, it will fail silently unless the script has also called the global <a href="https://api.jquery.com/ajaxError/">.ajaxError() </a> method. Alternatively, as of jQuery 1.5, the <code>.error()</code> method of the <code>jqXHR</code> object returned by jQuery.get() is also available for error handling.
+		</li>
+<li>
+			Script and JSONP requests are not subject to the same origin policy restrictions.
+		</li>
+</ul></div>
+<section class="entry-examples" id="entry-examples"><header><h2>Examples:</h2></header><div class="entry-example" id="example-0">
+<h4>Example: <span class="desc">Request the test.php page, but ignore the return results.</span>
+</h4>
+<div class="syntaxhighlighter javascript ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"test.php"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-1">
+<h4>Example: <span class="desc">Request the test.php page and send some additional data along (while still ignoring the return results).</span>
+</h4>
+<div class="syntaxhighlighter javascript ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"test.php"</span>, { name: <span class="string">"John"</span>, time: <span class="string">"2pm"</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-2">
+<h4>Example: <span class="desc">Pass arrays of data to the server (while still ignoring the return results).</span>
+</h4>
+<div class="syntaxhighlighter javascript ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"test.php"</span>, { <span class="string">"choices[]"</span>: [<span class="string">"Jon"</span>, <span class="string">"Susan"</span>] } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-3">
+<h4>Example: <span class="desc">Alert the results from requesting test.php (HTML or XML, depending on what was returned).</span>
+</h4>
+<div class="syntaxhighlighter javascript ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"test.php"</span>, <span class="keyword">function</span>( data ) {</code></div></div><div class="container"><div class="line"><code>  alert( <span class="string">"Data Loaded: "</span> + data );</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-4">
+<h4>Example: <span class="desc">Alert the results from requesting test.cgi with an additional payload of data (HTML or XML, depending on what was returned).</span>
+</h4>
+<div class="syntaxhighlighter javascript ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"test.cgi"</span>, { name: <span class="string">"John"</span>, time: <span class="string">"2pm"</span> } )</code></div></div><div class="container"><div class="line"><code>  .done(<span class="keyword">function</span>( data ) {</code></div></div><div class="container"><div class="line"><code>    alert( <span class="string">"Data Loaded: "</span> + data );</code></div></div><div class="container"><div class="line"><code>  });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div class="entry-example" id="example-5">
+<h4>Example: <span class="desc"> Get the test.php page contents, which has been returned in json format (&lt;?php echo json_encode( array( "name"=&gt;"John","time"=&gt;"2pm" ) ); ?&gt;), and add it to the page.</span>
+</h4>
+<div class="syntaxhighlighter javascript ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.get( <span class="string">"test.php"</span>, <span class="keyword">function</span>( data ) {</code></div></div><div class="container"><div class="line"><code>  $( <span class="string">"body"</span> )</code></div></div><div class="container"><div class="line"><code>    .append( <span class="string">"Name: "</span> + data.name ) <span class="comment">// John</span></code></div></div><div class="container"><div class="line"><code>    .append( <span class="string">"Time: "</span> + data.time ); <span class="comment">//  2pm</span></code></div></div><div class="container"><div class="line"><code>}, <span class="string">"json"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article><!-- #post-325 -->
+			</div>
+
+	<div id="sidebar" class="widget-area" role="complementary">
+	<aside id="categories" class="widget">
+		<ul>
+				<li class="cat-item cat-item-1 current-cat-parent"><a href="https://api.jquery.com/category/ajax/" title="View all posts filed under Ajax">Ajax</a>
+<ul class="children">
+	<li class="cat-item cat-item-2"><a href="https://api.jquery.com/category/ajax/global-ajax-event-handlers/" title="View all posts filed under Global Ajax Event Handlers">Global Ajax Event Handlers</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://api.jquery.com/category/ajax/helper-functions/" title="View all posts filed under Helper Functions">Helper Functions</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://api.jquery.com/category/ajax/low-level-interface/" title="View all posts filed under Low-Level Interface">Low-Level Interface</a>
+</li>
+	<li class="cat-item cat-item-5 current-cat"><a href="https://api.jquery.com/category/ajax/shorthand-methods/" title="View all posts filed under Shorthand Methods">Shorthand Methods</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://api.jquery.com/category/attributes/" title="View all posts filed under Attributes">Attributes</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://api.jquery.com/category/callbacks-object/" title="View all posts filed under Callbacks Object">Callbacks Object</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://api.jquery.com/category/core/" title="View all posts filed under Core">Core</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://api.jquery.com/category/css/" title="View all posts filed under CSS">CSS</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://api.jquery.com/category/data/" title="View all posts filed under Data">Data</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://api.jquery.com/category/deferred-object/" title="View all posts filed under Deferred Object">Deferred Object</a>
+</li>
+	<li class="cat-item cat-item-87"><a href="https://api.jquery.com/category/deprecated/" title="View all posts filed under Deprecated">Deprecated</a>
+<ul class="children">
+	<li class="cat-item cat-item-93"><a href="https://api.jquery.com/category/deprecated/deprecated-1.10/" title="View all posts filed under Deprecated 1.10">Deprecated 1.10</a>
+</li>
+	<li class="cat-item cat-item-90"><a href="https://api.jquery.com/category/deprecated/deprecated-1.3/" title="View all posts filed under Deprecated 1.3">Deprecated 1.3</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="https://api.jquery.com/category/deprecated/deprecated-1.7/" title="View all posts filed under Deprecated 1.7">Deprecated 1.7</a>
+</li>
+	<li class="cat-item cat-item-89"><a href="https://api.jquery.com/category/deprecated/deprecated-1.8/" title="View all posts filed under Deprecated 1.8">Deprecated 1.8</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://api.jquery.com/category/dimensions/" title="View all posts filed under Dimensions">Dimensions</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://api.jquery.com/category/effects/" title="View all posts filed under Effects">Effects</a>
+<ul class="children">
+	<li class="cat-item cat-item-14"><a href="https://api.jquery.com/category/effects/basics/" title="View all posts filed under Basics">Basics</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://api.jquery.com/category/effects/custom-effects/" title="View all posts filed under Custom">Custom</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="https://api.jquery.com/category/effects/fading/" title="View all posts filed under Fading">Fading</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://api.jquery.com/category/effects/sliding/" title="View all posts filed under Sliding">Sliding</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://api.jquery.com/category/events/" title="View all posts filed under Events">Events</a>
+<ul class="children">
+	<li class="cat-item cat-item-19"><a href="https://api.jquery.com/category/events/browser-events/" title="View all posts filed under Browser Events">Browser Events</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://api.jquery.com/category/events/document-loading/" title="View all posts filed under Document Loading">Document Loading</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://api.jquery.com/category/events/event-handler-attachment/" title="View all posts filed under Event Handler Attachment">Event Handler Attachment</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://api.jquery.com/category/events/event-object/" title="View all posts filed under Event Object">Event Object</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="https://api.jquery.com/category/events/form-events/" title="View all posts filed under Form Events">Form Events</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://api.jquery.com/category/events/keyboard-events/" title="View all posts filed under Keyboard Events">Keyboard Events</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://api.jquery.com/category/events/mouse-events/" title="View all posts filed under Mouse Events">Mouse Events</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://api.jquery.com/category/forms/" title="View all posts filed under Forms">Forms</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="https://api.jquery.com/category/internals/" title="View all posts filed under Internals">Internals</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="https://api.jquery.com/category/manipulation/" title="View all posts filed under Manipulation">Manipulation</a>
+<ul class="children">
+	<li class="cat-item cat-item-29"><a href="https://api.jquery.com/category/manipulation/class-attribute/" title="View all posts filed under Class Attribute">Class Attribute</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://api.jquery.com/category/manipulation/copying/" title="View all posts filed under Copying">Copying</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="https://api.jquery.com/category/manipulation/dom-insertion-around/" title="View all posts filed under DOM Insertion, Around">DOM Insertion, Around</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="https://api.jquery.com/category/manipulation/dom-insertion-inside/" title="View all posts filed under DOM Insertion, Inside">DOM Insertion, Inside</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="https://api.jquery.com/category/manipulation/dom-insertion-outside/" title="View all posts filed under DOM Insertion, Outside">DOM Insertion, Outside</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="https://api.jquery.com/category/manipulation/dom-removal/" title="View all posts filed under DOM Removal">DOM Removal</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="https://api.jquery.com/category/manipulation/dom-replacement/" title="View all posts filed under DOM Replacement">DOM Replacement</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="https://api.jquery.com/category/manipulation/general-attributes/" title="View all posts filed under General Attributes">General Attributes</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="https://api.jquery.com/category/manipulation/style-properties/" title="View all posts filed under Style Properties">Style Properties</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-39"><a href="https://api.jquery.com/category/miscellaneous/" title="View all posts filed under Miscellaneous">Miscellaneous</a>
+<ul class="children">
+	<li class="cat-item cat-item-40"><a href="https://api.jquery.com/category/miscellaneous/collection-manipulation/" title="View all posts filed under Collection Manipulation">Collection Manipulation</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="https://api.jquery.com/category/miscellaneous/data-storage/" title="View all posts filed under Data Storage">Data Storage</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="https://api.jquery.com/category/miscellaneous/dom-element-methods/" title="View all posts filed under DOM Element Methods">DOM Element Methods</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="https://api.jquery.com/category/miscellaneous/setup-methods/" title="View all posts filed under Setup Methods">Setup Methods</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://api.jquery.com/category/offset/" title="View all posts filed under Offset">Offset</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://api.jquery.com/category/properties/" title="View all posts filed under Properties">Properties</a>
+<ul class="children">
+	<li class="cat-item cat-item-46"><a href="https://api.jquery.com/category/properties/jquery-object-instance-properties/" title="View all posts filed under Properties of jQuery Object Instances">Properties of jQuery Object Instances</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="https://api.jquery.com/category/properties/global-jquery-object-properties/" title="View all posts filed under Properties of the Global jQuery Object">Properties of the Global jQuery Object</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-92"><a href="https://api.jquery.com/category/removed/" title="View all posts filed under Removed">Removed</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="https://api.jquery.com/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+<ul class="children">
+	<li class="cat-item cat-item-49"><a href="https://api.jquery.com/category/selectors/attribute-selectors/" title="View all posts filed under Attribute">Attribute</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="https://api.jquery.com/category/selectors/basic-css-selectors/" title="View all posts filed under Basic">Basic</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="https://api.jquery.com/category/selectors/basic-filter-selectors/" title="View all posts filed under Basic Filter">Basic Filter</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="https://api.jquery.com/category/selectors/child-filter-selectors/" title="View all posts filed under Child Filter">Child Filter</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="https://api.jquery.com/category/selectors/content-filter-selector/" title="View all posts filed under Content Filter">Content Filter</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="https://api.jquery.com/category/selectors/form-selectors/" title="View all posts filed under Form">Form</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="https://api.jquery.com/category/selectors/hierarchy-selectors/" title="View all posts filed under Hierarchy">Hierarchy</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="https://api.jquery.com/category/selectors/jquery-selector-extensions/" title="View all posts filed under jQuery Extensions">jQuery Extensions</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="https://api.jquery.com/category/selectors/visibility-filter-selectors/" title="View all posts filed under Visibility Filter">Visibility Filter</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-58"><a href="https://api.jquery.com/category/traversing/" title="View all posts filed under Traversing">Traversing</a>
+<ul class="children">
+	<li class="cat-item cat-item-59"><a href="https://api.jquery.com/category/traversing/filtering/" title="View all posts filed under Filtering">Filtering</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="https://api.jquery.com/category/traversing/miscellaneous-traversal/" title="View all posts filed under Miscellaneous Traversing">Miscellaneous Traversing</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="https://api.jquery.com/category/traversing/tree-traversal/" title="View all posts filed under Tree Traversal">Tree Traversal</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-63"><a href="https://api.jquery.com/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="https://api.jquery.com/category/version/" title="View all posts filed under Version">Version</a>
+<ul class="children">
+	<li class="cat-item cat-item-65"><a href="https://api.jquery.com/category/version/1.0/" title="View all posts filed under Version 1.0">Version 1.0</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="https://api.jquery.com/category/version/1.0.4/" title="View all posts filed under Version 1.0.4">Version 1.0.4</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="https://api.jquery.com/category/version/1.1/" title="View all posts filed under Version 1.1">Version 1.1</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="https://api.jquery.com/category/version/1.1.2/" title="View all posts filed under Version 1.1.2">Version 1.1.2</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="https://api.jquery.com/category/version/1.1.3/" title="View all posts filed under Version 1.1.3">Version 1.1.3</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="https://api.jquery.com/category/version/1.1.4/" title="View all posts filed under Version 1.1.4">Version 1.1.4</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="https://api.jquery.com/category/version/1.2/" title="View all posts filed under Version 1.2">Version 1.2</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="https://api.jquery.com/category/version/1.2.3/" title="View all posts filed under Version 1.2.3">Version 1.2.3</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="https://api.jquery.com/category/version/1.2.6/" title="View all posts filed under Version 1.2.6">Version 1.2.6</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="https://api.jquery.com/category/version/1.3/" title="View all posts filed under Version 1.3">Version 1.3</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://api.jquery.com/category/version/1.4/" title="View all posts filed under Version 1.4">Version 1.4</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="https://api.jquery.com/category/version/1.4.1/" title="View all posts filed under Version 1.4.1">Version 1.4.1</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="https://api.jquery.com/category/version/1.4.2/" title="View all posts filed under Version 1.4.2">Version 1.4.2</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="https://api.jquery.com/category/version/1.4.3/" title="View all posts filed under Version 1.4.3">Version 1.4.3</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="https://api.jquery.com/category/version/1.4.4/" title="View all posts filed under Version 1.4.4">Version 1.4.4</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="https://api.jquery.com/category/version/1.5/" title="View all posts filed under Version 1.5">Version 1.5</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="https://api.jquery.com/category/version/1.5.1/" title="View all posts filed under Version 1.5.1">Version 1.5.1</a>
+</li>
+	<li class="cat-item cat-item-82"><a href="https://api.jquery.com/category/version/1.6/" title="View all posts filed under Version 1.6">Version 1.6</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="https://api.jquery.com/category/version/1.7/" title="View all posts filed under Version 1.7">Version 1.7</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="https://api.jquery.com/category/version/1.8/" title="View all posts filed under Version 1.8">Version 1.8</a>
+</li>
+	<li class="cat-item cat-item-86"><a href="https://api.jquery.com/category/version/1.9/" title="View all posts filed under Version 1.9">Version 1.9</a>
+</li>
+</ul>
+</li>
+		</ul>
+	</aside>
+</div>
+</div>
+	</div>
+</div>
+
+<footer class="clearfix simple">
+	<div class="constrain">
+		<div class="row">
+			<div class="six columns offset-by-three">
+				<h3><span>Books</span></h3>
+				<ul class="books">
+					<li>
+						<a href="http://www.packtpub.com/learning-jquery-with-simple-javascript-techniques-fourth-edition/book">
+							<img src="./jQuery.get()   jQuery API Documentation_files/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114">
+							Learning jQuery Fourth Edition
+							<cite>Karl Swedberg and Jonathan Chaffer</cite>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.manning.com/affiliate/idevaffiliate.php?id=648_176">
+							<img src="./jQuery.get()   jQuery API Documentation_files/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault and Yehuda Katz" width="92" height="114">
+							jQuery in Action
+							<cite>Bear Bibeault and Yehuda Katz</cite>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513">
+							<img src="./jQuery.get()   jQuery API Documentation_files/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114">
+							jQuery Succinctly
+							<cite>Cody Lindley</cite>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+<div id="legal">
+	<ul class="footer-site-links">
+			<li><a class="icon-pencil" href="http://learn.jquery.com/">Learning Center</a></li>
+			<li><a class="icon-group" href="http://forum.jquery.com/">Forum</a></li>
+			<li><a class="icon-wrench" href="http://api.jquery.com/">API</a></li>
+			<li><a class="icon-twitter" href="http://twitter.com/jquery">Twitter</a></li>
+			<li><a class="icon-comments" href="http://irc.jquery.org/">IRC</a></li>
+			<li><a class="icon-github" href="https://github.com/jquery">GitHub</a></li>
+	</ul>
+	<p class="copyright">
+		Copyright 2014 <a href="https://jquery.org/team/">The jQuery Foundation</a>.
+		<a href="https://jquery.org/license/">jQuery License</a>
+		<span class="sponsor-line"><a href="http://mediatemple.net/" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://www.maxcdn.com/" rel="noindex,nofollow" class="mc-link">CDN by MaxCDN</a> | <a href="http://wordpress.org/" class="wp-link">Powered by WordPress</a> | Thanks: <a href="https://jquery.org/members/">Members</a>, <a href="https://jquery.org/sponsors/">Sponsors</a></span>
+	</p>
+</div>
+
+	</div>
+</footer>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1076265-1']);
+    _gaq.push(['_setDomainName', 'api.jquery.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>

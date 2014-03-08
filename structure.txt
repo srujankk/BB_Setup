@@ -1,0 +1,13 @@
+writing the flow for the application
+--------------------------------------
+
+Document.onReady
+
+load the required js files for the views
+
+load the templates for the views
+
+
+call the required initialize
+-   router
+-   history
