@@ -11,3 +11,11 @@ load the templates for the views
 call the required initialize
 -   router
 -   history
+
+
+Git Commands
+ git init
+ git add .
+ git commit -m "initial commit or any comments"
+ git remote add origin https://github.com/srujankk/BB_Setup.git
+ git push -u origin master
